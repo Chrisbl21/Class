@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    display: block;
+    background-color: #FFFFFF;
+}
+header {
+    height: 150px;
+    background-color: #999999;
+	color:black;
+	font-size: 100px;
+	margin:o auto;
+	padding-top: 50px;
+	text-align: center;
+    font-weight:1000;
+    text-shadow: 0px 0px;
+    letter-spacing: 10px;
+	font-family: "Special Elite", system-ui;
+}
+footer {
+    padding: 16px;
+    font-size: 12px;
+	color:white;
+	font-family: sans-serif;
+	positon:absolute;
+	bottom: 0px;
+}
+nav {
+    background-color: rgba(0,0,0,0.50);
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+ul a li {
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 20px;
+    color: #FFFFFF;
+	font-weight:normal;
+	font-family:"Special Elite", system-ui;
+}
+ul a li:hover {
+    background-color: #000000;
+	font-weight: bolder;
+}
+#home {
+	background-size: cover;
+	background-image: url("Images/Nickelback-nickelback-25842778-1024-768-1024x768.png");
+	height:1500px;
+	width:1366px;
+}
+#news {
+    background-image: url("Images/NB.png");
+    background-size: cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
+#stores {
+    background-image: url("Images/Background4.jpeg");
+	background-size: cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
+#videos {
+    margin: 0 auto;
+    display: block;
+    padding-left: 4px;
+}
+#concerts {
+    background-image:url("Images/Summer.png");
+	background-size: cover;
+	height:1000px;
+	width:1366px;
+	display:inline-block;
+}
+#photos {
+	background-image:url("Images/N.webp");
+	background-size:cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
+#mailing {
+    background-image:url("Images/NL.jpeg");
+	background-size: cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
+#eighth-page {
+    color: rgba(254,250,250,1.00);
+	font-family: 'David Libre', serif;
+    text-shadow: 6px 5px 5px rgba(0,0,0,0.52);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 56px;
+    letter-spacing: 3px;
+}
+
+#merch-1, #merch-2, #merch-3, #merch-4, #merch-5, #merch-6 {
+	display: inline-block;
+    margin: 0;
+    padding: 50px 65px;
+	cursor: pointer;
+	
+}
+#imagine-dragons-blog {
+	color: rgba(254,250,250,1.00);
+	font-family:"Special Elite", system-ui;
+    text-shadow: 6px 5px 5px rgba(0,0,0,0.52);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 56px;
+    letter-spacing: 3px;
+}
+#blogs {
+	background-image:url("Images/R-14334502-1572444404-6523.jpg");
+	background-size: cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
+#privacy {
+	background-image: url("Images/712K0ApCAIL._UF1000,1000_QL80_.jpg");
+	background-size: cover;
+	height:768px;
+	width:1366px;
+	display:inline-block;
+}
