@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WonderVista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(jason-briscoe-_kh-b5dJ_Yk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	font-family: "Pacifico", cursive;
+}
+header {
+    background-color: #fff;
+}
+wrapper {
+    width: 1366px;
+    margin: 32px auto;
+    display: block;
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.50);
+}
+.logo {
+    height: 75px;
+    width: auto;
+    margin-left: 32px;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 li {
+    background-image: none;
+    background-color: rgba(255,255,255,0.25);
+    margin: 8px;
+    text-align: center;
+    border-width: thin;
+    border-radius: 8px;
+    border-style: solid;
+}
+#Tabs1 li :hover {
+    background-color: rgba(0,153,255,0.50);
+}
+#Tabs1 a {
+    color: #fff;
+    font-family: Pacifico, cursive;
+}
+input ,select{
+    margin: 8px;
+    padding: 8px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Pacifico, cursive;
+    ;
+    ;
+    border-radius: 8px;
+    border: thin solid #09f;
+}
+section {
+    width: 50%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+}
+#submit {
+    width: 200px;
+    margin-top: 22px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    background-color: #09f;
+    display: block;
+    color: #fff;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="Artboard%201.png" alt="" width="474" height="585" class="logo"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="noun-plane-7774043.png" alt="" width="700" height="700"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="noun-hotel-7602567.png" alt="" width="700" height="700"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="noun-car-904285.png" alt="" width="700" height="700"><br>
+      Cars</a></li>
+      <li><a href="#tabs-4"><img src="noun-cruise-7692482.png" alt="" width="700" height="700"><br>
+      Cruises</a></li>
+      <li><a href="#tabs-5"><img src="noun-activity-7475684.png" alt="" width="700" height="700"><br>
+      Activities</a></li>
+    </ul>
+    <div id="tabs-1"><input type="text" placeholder="Going To">
+      <section></section>
+      <section></section>
+      <select>
+        <option value="0">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+		<input name="submit" type="submit" id="submit">
+    </div>
+    <div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+    <div id="tabs-3">
+      <p>Content 3</p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
