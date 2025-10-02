@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gra2754p2FirstnameLastnameYear</title>
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 1366px;
+        height: 1024px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        background:#00A3FF;
+        overflow: hidden;
+    }
+    .sunrise-svg {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        pointer-events: none;
+    }
+    #hills { fill: #76c893; animation: colorSweep 8s infinite alternate; }
+    #sun {
+        fill: #ffd700;
+        animation: sunRise 5s infinite alternate;
+        transform-box: fill-box;
+        transform-origin: center bottom;
+    }
+    #sky { fill: #a7c7e7; opacity: 0.6; }
+    @keyframes sunRise {
+        0%   { transform: translateY(70px) scale(0.7); opacity: 0.5; }
+        50%  { transform: translateY(-300px) scale(1.0); opacity: 1; } /* much higher */
+        100% { transform: translateY(0px) scale(1.07); opacity: 1; }
+    }
+    @keyframes colorSweep {
+        0%   { fill: #76c893; }
+        50%  { fill: #51b16a; }
+        100% { fill: #76c893; }
+    }
+    footer {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 0.95rem;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: #555;
+    }
+</style>
+
+
+</head>
+<body>
+    <main>
+        <!-- Fullscreen SVG on top of the photo background -->
+        <svg class="sunrise-svg" viewBox="0 0 1366 1024" xmlns="http://www.w3.org/2000/svg">
+            <rect id="sky" x="0" y="0" width="1366" height="1024"/>
+            <ellipse id="hills" cx="683" cy="924" rx="683" ry="180"/>
+            <circle id="sun" cx="683" cy="700" r="120"/>
+        </svg>
+    </main>
+    <footer>
+        © 2025, Firstname Lastname<br>
+        This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.
+    </footer>
+</body>
+</html>
